@@ -10,6 +10,25 @@ To configure the firmware, change the defines in the Config.h file.
 
 **Configuration instructions are here: [Configuration Instructions](https://github.com/LucidVR/lucidgloves/wiki/Firmware-Setup-and-Customization-Tutorial/).**
 
+## Using Arduino-CLI
+
+The Arduino-CLI is a little more ergonomic to use than the IDE.
+
+First, download and install [Arduino-CLI](https://github.com/arduino/arduino-cli)
+
+
+Read the [getting started guide](https://arduino.github.io/arduino-cli/0.27/getting-started/)
+
+Or just do this:
+
+```
+arduino-cli config init
+arduino-cli core update-index
+arduino-cli core install esp32:esp32
+arduino-cli compile --fqbn esp32:esp32:esp32
+arduino-cli upload -p COM3 --fqbn esp32:esp32:esp32 .
+```
+
 ## Tested boards:
 * ESP-WROOM-32
 
