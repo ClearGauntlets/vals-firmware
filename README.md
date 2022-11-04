@@ -24,6 +24,14 @@ Or just do this:
 ```
 arduino-cli config init
 arduino-cli core update-index
+```
+
+Locate your `arduino-cli.yaml` config file (check the output of `arduino-cli config init`) and add the following line under `board _manager -> additional_urls`
+```
+    - 'https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json'
+```
+
+```
 arduino-cli core install esp32:esp32
 arduino-cli compile --fqbn esp32:esp32:esp32
 arduino-cli upload -p COM3 --fqbn esp32:esp32:esp32 .
