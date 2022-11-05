@@ -77,7 +77,7 @@
 // Force Feedback and haptic settings
 // Force feedback allows you to feel the solid objects you hold
 // Haptics provide vibration.
-#define ENABLE_FORCE_FEEDBACK false
+#define ENABLE_FORCE_FEEDBACK true
 #define ENABLE_HAPTICS        false
 
 #define FORCE_FEEDBACK_FINGER_SCALING  false // Experimental: Determine servo range of motion based on calibration data.
@@ -144,11 +144,11 @@
   #define PIN_THUMB_SPLAY     1
 #elif defined(ESP32)
   //(This configuration is for ESP32 DOIT V1 so make sure to change if you're on another board)
-  #define PIN_PINKY           36
-  #define PIN_RING            39
+  #define PIN_PINKY           34//36
+  #define PIN_RING            34//39
   #define PIN_MIDDLE          34
   #define PIN_INDEX           35
-  #define PIN_THUMB           32
+  #define PIN_THUMB           35//32
   #define PIN_JOY_X           33
   #define PIN_JOY_Y           25
   #define PIN_JOY_BTN         26
