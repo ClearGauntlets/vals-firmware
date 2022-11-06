@@ -14,7 +14,7 @@
   #define SERVO_MAX !FORCE_FEEDBACK_INVERT ? MAX_PULSE_WIDTH : MIN_PULSE_WIDTH
   #define WRITE_FUNCTION(x) writeMicroseconds(x)
 #else
-  #define SERVO_MIN !FORCE_FEEDBACK_INVERT ? 0.0 : 180.0
+  #define SERVO_MIN !FORCE_FEEDBACK_INVERT ? 90.0 : 90.0
   #define SERVO_MAX !FORCE_FEEDBACK_INVERT ? 180.0 : 0.0
   #define WRITE_FUNCTION(x) write(x)
 #endif

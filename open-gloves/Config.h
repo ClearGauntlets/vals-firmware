@@ -81,7 +81,7 @@
 #define ENABLE_HAPTICS        false
 
 #define FORCE_FEEDBACK_FINGER_SCALING  false // Experimental: Determine servo range of motion based on calibration data.
-#define FORCE_FEEDBACK_SMOOTH_STEPPING true // Use servo microsecond pulses instead of degrees for more servo steps.
+#define FORCE_FEEDBACK_SMOOTH_STEPPING false // Use servo microsecond pulses instead of degrees for more servo steps.
 
 #define FORCE_FEEDBACK_STYLE_SERVO       0
 #define FORCE_FEEDBACK_STYLE_CLAMP       1
